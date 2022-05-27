@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: url(../images/bg-body.jpg) repeat;
+    
+}
+.login{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    color: #FFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    padding: 30px;
+    width: 25%;
+}
+.login i{
+    font-size: 100px;
+    margin: 20px auto;
+}
+input[type="text"], input[type="password"]{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+
+}
+button{
+    border: 0;
+    padding: 6px 12px;
+    margin: 20px auto;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    background-color: lightblue;
+    border-radius: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+button[type="submit"]:hover{
+    background-color: coral;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+a:hover{
+    color: red;
+    transition: 0.5s;
+    font-size: 20px;
+}
+div{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+}
+#username,#password{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#home{
+    color: red; 
+    font-size: 40px;
+    text-shadow: 
+        0 1px 0 #ef0505,
+        0 2px 0 #c50303,
+        0 3px 0 #ad0505,
+        0 4px 0 #8f0303,
+        0 5px 0 #1c0202;
+}
+p{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#ffffff; 
+    text-shadow:0 0 20px #d3f02d;
+}
+#home:hover{
+		color: red !important;
+		transition: 0.5s !important;
+		font-size: 50px !important;
+}
+@media (max-width: 450px){
+    .login{
+        width: 70%;
+    }
+}
